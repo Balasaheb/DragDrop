@@ -1,0 +1,20 @@
+<aura:component extends="c:DraggableCompEvtCmp">
+	<aura:attribute type="string" name="data"/>
+    <aura:attribute type="string" name="parentContainerName"/>
+    <aura:attribute type="integer" name="order"/>
+    
+    <aura:registerEvent name="DragEnds" type="c:DraggEndEvt"/>
+
+    <aura:method name="resetIt" action="{!c.resetIt}" access="GLOBAL">
+    </aura:method>
+    <aura:method name="highLightLeft" action="{!c.highLightLeft}" access="GLOBAL">
+    </aura:method>
+    <aura:method name="highLightRight" action="{!c.highLightRight}" access="GLOBAL">
+    </aura:method>
+
+    <div class="slds-size_1-of-8" aura:id="topCont" draggable="true" ondragstart="{!c.dragStart}" ondragend="{!c.dragEnd}">
+    	<div aura:id="elementContainer" class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small customBox">
+            {!v.data}
+        </div>
+   </div>
+</aura:component>

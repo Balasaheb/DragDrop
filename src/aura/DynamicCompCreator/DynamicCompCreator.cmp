@@ -1,0 +1,3 @@
+<aura:component extensible="true" extends="c:DraggableCompEvtCmp">
+	{!v.body}
+</aura:component>

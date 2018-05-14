@@ -1,0 +1,29 @@
+.THIS .customBox 
+{
+    background-color: #e1eac2;
+    font-family: "Times New Roman", Times, serif;
+    min-height: 100px; 
+    padding:10%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.THIS p
+{
+	font-size: 8px;
+}
+
+.THIS.active
+{
+	border:1px dashed blue ;
+}
+
+.THIS .LeftSide
+{
+	border-left: 8px solid green;
+}
+
+.THIS .RightSide
+{
+	border-right: 8px solid green;
+}
